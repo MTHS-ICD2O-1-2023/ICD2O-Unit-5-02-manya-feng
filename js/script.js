@@ -1,5 +1,20 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2024 Manya All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Manya
+// Created on: Apr 2024
 // This file contains the JS functions for index.html
+
+/**
+ * This function displays the slider value.
+ */
+function myButtonClicked() {
+  positiveButtonChecked = document.getElementById('on-check').checked
+
+  if (positiveButtonChecked == true) {
+    document.getElementById("radio-button-value").innerHTML =
+      "<p>Value is: Positive</p>"
+  } else {
+    document.getElementById("radio-button-value").innerHTML =
+      "<p>Value is: Negative</p>"
+  }
+}
