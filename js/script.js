@@ -4,17 +4,21 @@
 // Created on: Apr 2024
 // This file contains the JS functions for index.html
 
+const randomNumber = Math.floor(Math.random() * 6) + 1
+console.log(randomNumber)
+
 /**
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  positiveButtonChecked = document.getElementById('on-check').checked
+  numberGuessed = document.getElementById('positive-number').checked
 
-  if (positiveButtonChecked == true) {
+  if (numberGuessed == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Positive</p>"
+      "The random number is: " + randomNumber + "."
   } else {
+    numberGuessed = (-1 * randomNumber)
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Negative</p>"
+      "The random number is: - " + randomNumber + "."
   }
 }
