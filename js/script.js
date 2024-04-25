@@ -14,11 +14,11 @@ function myButtonClicked() {
   numberGuessed = document.getElementById('positive-number').checked
 
   if (numberGuessed == true) {
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("number-answer").innerHTML =
       "The random number is: " + randomNumber + "."
   } else {
     numberGuessed = (-1 * randomNumber)
-    document.getElementById("radio-button-value").innerHTML =
+    document.getElementById("number-answer").innerHTML =
       "The random number is: - " + randomNumber + "."
   }
 }
