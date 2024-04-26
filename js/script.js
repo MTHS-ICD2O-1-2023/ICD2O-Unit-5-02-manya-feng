@@ -10,15 +10,18 @@ console.log(randomNumber)
 /**
  * This function displays the slider value.
  */
-function myButtonClicked() {
-  numberGuessed = document.getElementById('positive-number').checked
 
-  if (numberGuessed == true) {
-    document.getElementById("number-answer").innerHTML =
+const number = document.getElementById('radio').checked
+
+function myButtonClicked() {
+  alwaysOnButtonChecked = document.getElementById('on-check').checked
+
+  if (alwaysOnButtonChecked == true) {
+    document.getElementById("positive-number").innerHTML =
       "The random number is: " + randomNumber + "."
   } else {
-    numberGuessed = (-1 * randomNumber)
-    document.getElementById("number-answer").innerHTML =
-      "The random number is: - " + randomNumber + "."
+    randomNumber2 = (-1 * randomNumber)
+    document.getElementById("negative-number").innerHTML =
+      "The random number is: - " + randomNumber2 + "."
   }
 }
