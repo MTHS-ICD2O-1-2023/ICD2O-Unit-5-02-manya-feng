@@ -22,6 +22,6 @@ function myButtonClicked() {
   } else {
     randomNumber2 = (-1 * randomNumber)
     document.getElementById("negative-number").innerHTML =
-      "The random number is: - " + randomNumber2 + "."
+      "The random number is: " + randomNumber2 + "."
   }
 }
