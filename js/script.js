@@ -4,16 +4,16 @@
 // Created on: Apr 2024
 // This file contains the JS functions for index.html
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
-console.log(randomNumber)
+"use strict"
 
-/**
+function myButtonClicked() {
+  /**
  * This function displays the slider value.
  */
 
-const number = document.getElementById('radio').checked
-
-function myButtonClicked() {
+  const randomNumber = Math.floor(Math.random() * 6) + 1
+  console.log(randomNumber)
+  const number = document.getElementById('radio').checked
   alwaysOnButtonChecked = document.getElementById('on-check').checked
 
   if (alwaysOnButtonChecked == true) {
